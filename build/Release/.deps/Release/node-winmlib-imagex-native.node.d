@@ -1,0 +1,1 @@
+cmd_Release/node-winmlib-imagex-native.node := c++ -bundle -undefined dynamic_lookup -Wl,-search_paths_first -mmacosx-version-min=10.7 -arch arm64 -L./Release -stdlib=libc++  -o Release/node-winmlib-imagex-native.node Release/obj.target/node-winmlib-imagex-native/src/node_winmlib_imagex.o Release/nothing.a 
