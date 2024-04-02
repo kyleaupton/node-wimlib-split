@@ -1,17 +1,19 @@
 {
   "name": "node-winmlib-imagex",
-  "description": "Nodejs addon for the C wimlib-imagex library",
   "version": "1.0.0",
-  "main": "lib/binding.js",
-  "gypfile": true,
+  "description": "Nodejs addon for the C wimlib-imagex library",
   "author": "Kyle Upton <kyleaupton@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "node-addon-api": "^1.1.0"
-  },
+  "main": "dist/binding.js",
+  "types": "dist/binding.d.ts",
+  "gypfile": true,
   "scripts": {
     "pretest": "tsc",
-    "test": "node --napi-modules ./test/test_binding.js"
+    "test": "node --napi-modules ./test/test_binding.mjs"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^1.1.0"
   },
   "devDependencies": {
     "@types/node": "^7.0.22",

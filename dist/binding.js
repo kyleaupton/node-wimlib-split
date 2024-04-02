@@ -1,3 +1,5 @@
 "use strict";
-const addon = require('../build/Release/node-winmlib-imagex-native');
-module.exports = addon.NodeWinmlibImagex;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.split = void 0;
+const addon = require('../build/Release/main.node');
+exports.split = addon.split;
