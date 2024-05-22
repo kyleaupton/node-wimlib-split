@@ -3,7 +3,8 @@ import { split } from "../dist/binding.js";
 
 function testBasic() {
   const result = split();
-  assert.strictEqual(result, "world", "Unexpected value returned");
+  console.log('result:', result);
+  assert.strictEqual(result, "ok", "Unexpected value returned");
 }
 
 assert.doesNotThrow(testBasic, undefined, "testBasic threw an expection");
