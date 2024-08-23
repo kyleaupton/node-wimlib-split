@@ -1,4 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Exclude vendored code
 src/* linguist-vendored
+include/* linguist-vendored
+# Include main.c as non-vendored code
 src/main.c -linguist-vendored
